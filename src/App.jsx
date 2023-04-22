@@ -108,6 +108,7 @@ function Main(props) {
 
 function Chat(props) {
     const [text, setText] = useState("")
+    const [inputText, setInputText] = useState("")
     const [reply, setReply] = useState([])
     const [messi, setMessi] = useState([])
     const [cr7, setCr7] = useState([])
@@ -118,6 +119,8 @@ function Chat(props) {
         } else if( props.info === "Messi" && document.getElementById("the-messs").value != ""){
         return setMessi(prev => [...prev, text])
         }
+
+        setText(document.getElementById("the-messs").value === "")
     }
 
     const seeCr7Replies = cr7.map((msg)=> {
