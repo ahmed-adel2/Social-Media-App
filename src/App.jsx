@@ -2,8 +2,6 @@ import { useState } from 'react'
 import './App.css'
 import theContacts from './trial'
 import Side from './Side'
-import {Sidenav} from "tw-elements"; initTE({ Sidenav });
-import {Modal,Ripple,initTE,} from "tw-elements"; initTE({ Modal, Ripple });
 
 function App() {
     const [rashad, setRashad] = useState(true)
@@ -203,7 +201,7 @@ function Chat(props) {
         <div className="chat-msg">
             <img src="emotes-icon.svg" id="emotes-icon" className="icon" />
             <img src="file-icon.svg" id="attach-file-icon" className="icon" />
-            <input type="text" className="the-msg" id="the-messs"
+            <input type="text" placeholder='Enter your text' className="the-msg" id="the-messs"
             value={text} onChange={(e)=> setText(e.target.value)}
             />
             <img src="send-icon.svg" id="send-icon" className="icon" 
