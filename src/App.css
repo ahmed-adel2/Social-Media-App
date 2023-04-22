@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+    color: rgb(209, 209, 209);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: #282828;
+}
+
+.rashads-open {
+    border-radius: 5px;
+    width: 70%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+    mix-blend-mode: color-dodge;
+    filter: brightness(160%) saturate(200%) drop-shadow(5px 5px 100px rgb(249, 249, 249));
+}
+
+.introduction {
+    color: white;
+    margin: 0px 40px;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 5px 5px 200px black;
+}
+
+.join-btn-container {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#join {
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 30px black;
+    margin-bottom: 40px;
+}
+
+.whole-app-container {
+    display: flex;
+}
+
+.contacts-container {
+    width: 35%;
+    min-width: 320px;
+    min-height: 100%;
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #323232;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+.basic-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10px;
+    width: 40%;
+}
+
+.contacts {
+    position: fixed;
+    height: 85%;
+    width: 319px;
+    display: flex;
+    flex-direction: column;
+    background-color: #282828;
+    margin-top: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.contacts::-webkit-scrollbar {
+    width: 12px;
+}
+
+.contacts::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(77, 77, 77, 0.5);
+}
+
+.contacts::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(192, 192, 192, 0.3);
+    border-radius: 10px;
+}
+
+.each-contact {
+    display: flex;
+    border-bottom: 2px solid rgba(96, 96, 96, 0.304);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.words-of-contact {
+    display: inline;
+    justify-content: start;
+}
+
+.last-msg-sent {
+    color: grey;
+    max-height: 30px;
+    max-width: 210px;
+}
+
+#task-bar-icon, #sidenav-7 {
+    display: none;
+}
+
+@media (max-width: 670px) {
+    .contacts-container {
+        display: none;
+    }
+
+    #task-bar-icon, #sidenav-7 {
+        display: flex;
+    }
+}
+
+@media screen and (min-height:1100px) {
+    .contacts {
+        min-height: 1200px;
+    }
+
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 350px;
+    height: 100vh;
+    background-image: url("/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+.chat-identifier {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    min-height: 70px;
+    background-color: #323232;
+    box-shadow: 2px 2px 10px black;
+}
+
+.the-talker {
+    display: block;
+    justify-content: start;
+    align-items: center;
+}
+
+.talker-additives {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100px;
+    margin-right: 5px;
+}
+
+.chat-identifier {
+    width: 100%;
+    height: 70px;
+}
+
+.adjust-identifier {
+    display: flex;
+}
+
+.chat-msg {
+    position: sticky;
+    top: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #323232;
+    box-shadow: 2px 2px 10px black;
+    width: 100%;
+}
+
+.the-msg {
+    width: 100%;
+    color: white;
+    font-size: 16px;
+}
+
+#the-messs {
+    background-color: #282828;
+    border: none;
+}
+
+.icon {
+    width: 30px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.profile-pics {
+    width: 55px;
+    border-radius: 100%;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#emotes-icon,
+#send-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#attach-file-icon {
+    margin-right: 10px;
+}
+
+.where-chat-goes {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.where-chat-goes::-webkit-scrollbar {
+    width: 12px;
+}
+
+.where-chat-goes::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: grey;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 249, 17, 0.5);
+}
+
+.where-chat-goes::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(30, 255, 0, 0.3);
+    border-radius: 10px;
+}
+
+#add-profile-in-chat {
+    height: 57px;
+}
+
+#profile-in-chat {
+    padding-top: 5px;
+    padding-bottom: 7px;
+    width: 55px;
+    border-radius: 100%;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.name-in-chat {
+    padding-top: 10px;
+    margin-left: 5px;
+    min-width: 127px;
+}
+
+.online {
+    margin-left: 5px;
+}
+
+.the-profile-pic-in-chat {
+    width: 55px;
+    height: 62px;
+    border-radius: 100%;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.start-chatting {
+    height: 100%;
+    width: 100%;
+}
+
+.start-chatting-word {
+    text-align: center;
+    margin: auto 20px;
+    font-style: oblique;
+    margin-top: 50%;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 70px whitesmoke;
+}
+
+.bkgrd-of-chat {
+    width: fit-content;
+    max-width: 270px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 3px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: rgb(61, 101, 61);
+    border-radius: 5px;
+}
+
+.my-reply-section {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.my-reply-bar {
+    max-width: 270px;
+    background-color: rgb(189, 189, 189);
+    width: fit-content;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 3px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.my-reply {
+    color: black;
+    word-break: break-word;
+    max-width: 250px;
+}
+
+.div-nav{
+    margin-top: 20px;
+    width: 100%;
+    height: 65px;
+    display: flex;
+}
+
+.side-contact-words{
+    display: block;
+}
