@@ -95,7 +95,7 @@ function Main(props) {
                     <a href="https://www.instagram.com/ahmedrashad_97/" target="_blank"><img src="instagram-icon.svg" className=" w-10" /></a>
                     <a href="https://twitter.com/supermody1997" target="_blank"><img src="twitter-icon.svg" className=" w-10" /></a>
                 </div>
-                <p className="ml-3">Follow my <a href="https://rashads-web-dev-portofolio.netlify.app/" target="_blank" className= " text-green-500 transition duration-150 ease-in-out hover:bg-yellow-900 ; active:text-warning-700">
+                <p className="ml-3">Follow my <a href="https://rashads-web-development-portofolio.vercel.app/" target="_blank" className= " text-green-500 transition duration-150 ease-in-out hover:bg-yellow-900 ; active:text-warning-700">
                     Web development Website </a>through this link.</p>
                 </div>
             </div>
